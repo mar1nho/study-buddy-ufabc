@@ -1,0 +1,101 @@
+/*Font Setup*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: #3155e7;
+    --primary-dark: #2045d6;
+    --black: #010101;
+    --gray-1: #788190;
+    --gray-2: #d3d4db;
+    --white: #FFFFFF;
+    --body: #1b1b1b;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 3px 3px 10px 0 #000000;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+  }
+
+body {
+    font-family: "Bricolage Grotesque", sans-serif;
+    background-color: var(--body);
+}
+
+.navbar {
+    padding: 15px 0;
+    background: #383838;
+    box-shadow: inset 20px 20px 60px #2c2c2c,
+                inset -20px -20px 60px #202020
+}
+
+.nav-link {
+    margin-left: 41px;
+    font-size: 16px;
+    color: var(--gray-1);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--black);
+}
+
+.dropdown-item {
+    color: var(--white);
+    text-align: center;
+    font-weight: 500;
+}
+
+
+section.hero .text {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 73px;
+    padding-top: 360px;
+    color: var(--black);
+}
+
+.buttons {
+    margin-left: 55px;
+}
+
+.buttons a {
+    margin: 30px 30px 30px 0px;
+    width: 150px;
+    height: 35px;
+    border-radius: 11px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    color: var(--black);
+}
+
+.buttons a:hover {
+    color: var(--gray-1);
+    -webkit-box-shadow: 2px -21px 94px 15px rgba(255,255,255,0.4);
+    -moz-box-shadow: 2px -21px 94px 15px rgba(255,255,255,0.4);
+    box-shadow: 2px -21px 94px 15px rgba(255,255,255,0.4);
+}
+
+.hero {
+    position: relative;
+    padding-top: 190px;
+  }
+  
+  .hero-image {
+    padding-right: 65px;
+    padding-bottom: 160px;
+    position: absolute;
+    top: 50%; /* Alinha a imagem verticalmente no meio */
+    left: 50%; /* Alinha a imagem horizontalmente no meio */
+    transform: translate(-50%, -50%); /* Move a imagem de volta metade do seu tamanho em ambas as direções */
+    z-index: -1; /* Para garantir que a imagem fique atrás do conteúdo */
+    max-width: 80%; /* Define a largura máxima da imagem */
+    height: auto; /* Para manter a proporção da imagem */
+  }
+  
+  
